@@ -37,10 +37,8 @@
   }
 }
 
-
-
 #navbar-container {
-  background: rgba(49,35,34);
+  background: rgba(49, 35, 34);
   position: fixed;
   display: flex;
   width: 100%;
@@ -56,7 +54,6 @@
   z-index: 100;
   border-top: 0;
   transition: 0.3s;
-
 }
 
 .scrolled + #about-me-content {
@@ -66,7 +63,6 @@
 #navbar-container-left {
   /* align-self: flex-start; */
   margin: auto;
-
 }
 
 #navbar-container-right {
@@ -84,7 +80,6 @@
   margin-left: 5vw;
 }
 
-
 /* these are to remove text decorations from all the links in the navigation bar and to style the text in them*/
 .navbar-links a {
   text-decoration: none;
@@ -96,12 +91,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color:rgb(253, 236, 236);
+  color: rgb(253, 236, 236);
 }
 
 .parallax {
   /* The image used */
-  background-image: url('assets/dusan-veverkolog-UOS0NMcmURc-unsplash.jpg');
+  background-image: url("assets/dusan-veverkolog-UOS0NMcmURc-unsplash.jpg");
 
   /* Full height */
   height: 100vh;
@@ -113,10 +108,9 @@
   background-size: cover;
 }
 
-
 #about-me-content {
   background: rgba(73, 70, 67, 0.507);
-  color:rgb(253, 236, 236);
+  color: rgb(253, 236, 236);
   padding: 2rem;
 
   /* following is for making the block in center of the screen */
@@ -127,13 +121,12 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  
 }
 
 #my-name {
-    /* for removing font-wrapping */
-    white-space: nowrap;
-    color: rgb(255, 255, 255);
+  /* for removing font-wrapping */
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
 }
 
 #introduction {
@@ -148,7 +141,7 @@
   object-position: center;
 
   /* to make it circular */
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .skill-text {
@@ -202,16 +195,13 @@
 #projects a {
   /* text-decoration: none; */
   font-weight: bold;
-  color: rgb(15, 159, 255)
+  color: rgb(15, 159, 255);
 }
-
 
 .not-expanded {
   display: none !important;
 }
 
 #burgButton {
-  color:rgb(253, 236, 236);
+  color: rgb(253, 236, 236);
 }
-
-

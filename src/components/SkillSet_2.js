@@ -3,6 +3,8 @@ import { Grid, Typography, Button, Divider } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core/styles";
 
+import myResume from "../assets/my_resume.pdf";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPager,
@@ -25,13 +27,15 @@ const SkillSet = (props) => {
   const classes = useStyles();
 
   const skillList = props.skills.map((skill) => {
-    return <SkillCard
-      key={skill.id}
-      icon={skill.icon}
-      title={skill.title}
-      experience={skill.experience}
-      tech={skill.tech}
-    />;
+    return (
+      <SkillCard
+        key={skill.id}
+        icon={skill.icon}
+        title={skill.title}
+        experience={skill.experience}
+        tech={skill.tech}
+      />
+    );
   });
 
   return (
@@ -61,14 +65,11 @@ const SkillSet = (props) => {
 
         {/* download resume button */}
         <Grid item xs={12}>
-          <Button
-            variant="contained"
-            color="primary"
-            disableElevation
-            onClick={console.log(props.data)}
-          >
-            Download Resume
-          </Button>
+          <a href={myResume} download="arjun's resume.pdf">
+            <Button variant="contained" color="primary" disableElevation>
+              Download Resume
+            </Button>
+          </a>
         </Grid>
       </Grid>
     </div>
