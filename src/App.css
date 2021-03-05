@@ -199,14 +199,14 @@
 }
 
 .not-expanded {
-  /* display: none !important; */
-  transform: translateY(-100%) !important;
-  transition: all 0.2s ease-out;
+  display: none !important;
+  /* transform: translateY(-100%) !important;
+  transition: all 0.2s ease-out; */
 }
 
-.burg-links {
+/* .burg-links {
   transform: translateY(0%);
-}
+} */
 
 /* 
 .expanded {

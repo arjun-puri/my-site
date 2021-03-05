@@ -5,7 +5,7 @@ import { Grid, Typography, Hidden } from "@material-ui/core";
 // import "../App.css";
 import "./Navbar_3.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -76,12 +76,14 @@ const Navbar = (props) => {
   // end of scrolling logic
 
 
-  // burg-links logic
+  // burg-links and burg-button logic
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [burgButton, setBurgButton] = React.useState(false);
 
   const handleNavbarOpen = () => {
     setNavbarOpen(!navbarOpen);
+    setBurgButton(!burgButton);
   };
 
   let burgLinksClasses = ["burg-links"];
@@ -91,7 +93,7 @@ const Navbar = (props) => {
 
   // end of burg-links logic
   return (
-    <div id="navbar-3" className={navbarClasses.join(" "), classes.rootContainer}>
+    <div id="navbar-3" className={[navbarClasses.join(" ") +" "+ classes.rootContainer]}>
       <Grid container alignItems="center" justify="space-around" spacing={4}>
         <Grid className="navbar-3-logo" item xs={4}>
           <a href="/">
@@ -114,8 +116,8 @@ const Navbar = (props) => {
 
         {/* this is the burger button */}
         <Hidden lgUp>
-            <Grid item xs={4}>
-                <FontAwesomeIcon icon={faBars} size="2x" onClick={handleNavbarOpen} color="rgb(253, 236, 236)"></FontAwesomeIcon>
+            <Grid item xs={4} className="burg-button">
+                <FontAwesomeIcon icon={burgButton ? faTimes : faBars} size="2x" onClick={handleNavbarOpen} color="rgb(253, 236, 236)"></FontAwesomeIcon>
             </Grid>
         </Hidden>
 
