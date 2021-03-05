@@ -19,7 +19,9 @@ import Projects from "./components/Projects";
 import SkillSet from "./components/SkillSet_2";
 import {skillData} from "./data/skillData";
 
-import Navbar from "./components/Navbar_2";
+import Navbar from "./components/Navbar_3/Navbar_3";
+// import BurgLinks from './components/BurgLinks';
+// import MyNavbar from '../../utopia_react_1/src/components/MyNavbar';
 
 const styles = theme => ({
   "@global": {

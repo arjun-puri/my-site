@@ -1,0 +1,43 @@
+#navbar-3 {
+        background: rgba(49, 35, 34);
+        position: fixed;
+        /* display: flex; */
+        width: 100%;
+        z-index: 100;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 0;
+    transition: 0.3s;
+  }
+
+  .scrolled + #about-me-content {
+      padding-top: 60px;
+  }
+
+  #navbar-3 a {
+      text-decoration: none;
+    color: rgb(253, 236, 236);
+  }
+
+ .burg-links {
+     display: flex;
+     height: 0rem;
+     overflow: hidden;
+     transition: all 0.5s ease;
+     background-color: rgb(41, 29, 28);
+ }
+
+ .expanded {
+     height: 10rem;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+ }
+
+
+
+

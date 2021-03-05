@@ -111,7 +111,7 @@ const Navbar = () => {
           justify="space-between"
           alignItems="center"
           item
-          className={navbarLinks.join(" ")}
+          className={" burg-links "+navbarLinks.join(" ")}
           xs={12}
           spacing={1}
         >
