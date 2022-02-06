@@ -38,7 +38,7 @@ const Introduction = () => {
 
         <Grid container item xs={12} justify='center' id='my-image-container'>
           <Grid item xs={6} sm={4} md={2}>
-            <img id='my-image' src={arjun_image} />
+            <img id='my-image' alt="arjun" src={arjun_image} />
           </Grid>
         </Grid>
 

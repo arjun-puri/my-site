@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "../App.css";
-// import { render } from "react-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);

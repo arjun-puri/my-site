@@ -26,7 +26,7 @@ const ContactMe = () => {
 
                 <Grid item>
                     <Typography variant="body1" align="center">
-                        You can reach me at <a href="#">arjunpuri@arjunpuri.me</a>
+                        You can reach me at <a href="mailto:arjunpuri@arjunpuri.me">arjunpuri@arjunpuri.me</a>
                     </Typography>
                 </Grid>
             </Grid>
