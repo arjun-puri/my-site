@@ -3,7 +3,7 @@ export let skillData = [
         id: 0,
         icon: 'pager',
         title: 'Frontend Web Development',
-        experience: 'Intermediate',
+        experience: 'Advanced',
         tech: 'HTML, CSS, Javascript, React.js',
     },
 
@@ -11,7 +11,7 @@ export let skillData = [
         id: 1,
         icon: 'database',
         title: 'Backend Web Development',
-        experience: 'Advanced',
+        experience: 'Intermediate',
         tech: 'SQL(Oracle, PostgreSQL), Express.js, Node.js',
     },
 
@@ -27,7 +27,7 @@ export let skillData = [
         id: 3,
         icon: 'cloud',
         title: 'Cloud Computing',
-        experience: 'Advanced',
+        experience: 'Intermediate',
         tech: 'AWS, Linux, Virtualization(LXC, KVM)',
     }
 
